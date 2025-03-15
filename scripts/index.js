@@ -26,9 +26,10 @@ days.forEach((day) => {
 //access the submittask button
 const taskList = ["Touch some grass"];
 const submitTask = document.getElementById("submit-task");
-//attac an event listener immediately affect accessing submittask button
+//attach an event listener immediately affect accessing submittask button
 submitTask.addEventListener("click", () => {
   const description = document.getElementById("input-description").value;
+  console.log(description);
   taskList.push(description);
   console.log(taskList);
 });
